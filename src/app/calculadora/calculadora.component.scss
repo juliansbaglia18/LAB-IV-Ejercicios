@@ -1,0 +1,11 @@
+.boton-punto2 {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: blue;
+    transition: transform 3s ease-in-out;
+  }
+  
+  .boton-punto2:hover {
+    transform: scale(1.05);
+  }

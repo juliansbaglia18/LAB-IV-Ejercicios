@@ -1,0 +1,67 @@
+.bienvenido-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white; /* Fondo blanco */
+  
+    .container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      h1 {
+        color: brown; /* Texto marrón */
+        font-weight: bold; /* Texto en negrita */
+        opacity: 0; /* Inicialmente oculto */
+  
+        /* Animación para mostrar la palabra "Bienvenido" gradualmente en 3 segundos */
+        animation: aparecer 3s ease-in-out forwards;
+      }
+  
+      .flechas {
+        display: flex;
+        margin-top: 20px;
+  
+        .fa-arrow-right {
+          font-size: 24px;
+          color: rgb(0, 0, 0); /* Flechas grises */
+          opacity: 0; /* Inicialmente ocultas */
+  
+          /* Animación para mostrar las flechas gradualmente en 2 segundos */
+          animation: aparecer 2s ease-in-out forwards;
+        }
+      }
+    }
+  }
+
+  .login-container {
+    display: none; /* Inicialmente oculto */
+    position: relative;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Animación para mostrar gradualmente elementos con opacidad */
+  @keyframes aparecer {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Animación para hacer parpadear las flechas */
+  @keyframes parpadear {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
